@@ -1,0 +1,176 @@
+/* Container & Header */
+.explorer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.explorer-header-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--bs-heading-color, #1e293b);
+  letter-spacing: -0.5px;
+}
+
+/* Multi-Level Search & Filter Bar */
+.filter-card-bar {
+  background-color: var(--bs-body-bg, #ffffff);
+  border: 1px solid var(--bs-border-color, #e2e8f0);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.filter-card-bar .form-control,
+.filter-card-bar .form-select {
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.95rem;
+  border-color: var(--bs-border-color, #cbd5e1);
+  transition: all 0.2s ease;
+}
+
+.filter-card-bar .form-control:focus,
+.filter-card-bar .form-select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.btn-filter-submit {
+  background-color: #4f46e5;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-filter-submit:hover {
+  background-color: #4338ca;
+}
+
+.btn-filter-submit:active {
+  transform: scale(0.98);
+}
+
+/* Fandom Content Cards */
+.fandom-card {
+  background-color: var(--bs-body-bg, #ffffff);
+  border: 1px solid var(--bs-border-color, #e2e8f0);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.fandom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Media Image & Type Badges */
+.card-media-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-color: #0f172a;
+}
+
+.card-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.fandom-card:hover .card-media-img {
+  transform: scale(1.06);
+}
+
+.type-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.8);
+  color: #ffffff;
+  backdrop-filter: blur(4px);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Card Body & Text */
+.card-title-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--bs-heading-color, #0f172a);
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.card-desc-text {
+  font-size: 0.88rem;
+  color: var(--bs-secondary-color, #64748b);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card Footer & Actions */
+.card-footer-custom {
+  background-color: transparent;
+  border-top: 1px solid var(--bs-border-color, #f1f5f9);
+  padding: 0.85rem 1.25rem;
+}
+
+.view-counter {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.btn-bookmark-action {
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.btn-bookmark-action:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* Empty State & Loading Spinner */
+.empty-state-box {
+  background-color: var(--bs-body-bg, #ffffff);
+  border: 1px dashed var(--bs-border-color, #cbd5e1);
+  border-radius: 12px;
+  padding: 3rem 1.5rem;
+}
+
+/* Dark Mode Overrides (SRS Accessibility) */
+[data-bs-theme="dark"] .filter-card-bar {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+[data-bs-theme="dark"] .fandom-card {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+[data-bs-theme="dark"] .card-footer-custom {
+  border-top-color: #334155;
+}

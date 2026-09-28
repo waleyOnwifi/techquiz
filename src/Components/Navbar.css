@@ -1,0 +1,136 @@
+/* Monochrome Tech Aesthetic Theme */
+:root {
+  --tech-bg: #0a0a0c;
+  --tech-card: #121316;
+  --tech-border: #2a2d34;
+  --tech-white: #ffffff;
+  --tech-gray: #a0a5b5;
+  --tech-dim: #1f222a;
+}
+
+.tech-navbar {
+  background-color: var(--tech-bg) !important;
+  border-bottom: 1px solid var(--tech-border);
+  font-family: 'Space Grotesk', 'Courier New', monospace, sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Diagonal Tech Slash Accents */
+.tech-brand {
+  position: relative;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--tech-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-brand-tag {
+  background: var(--tech-white);
+  color: var(--tech-bg);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  transform: skewX(-12deg);
+  font-weight: 800;
+}
+
+/* Nav Link Hover & Angled Cut Effect */
+.tech-nav-link {
+  color: var(--tech-gray) !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.tech-nav-link:hover,
+.tech-nav-link.active {
+  color: var(--tech-white) !important;
+  background: var(--tech-dim);
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+/* Monochrome Input Field */
+.tech-search-input {
+  background-color: #000000 !important;
+  border: 1px solid var(--tech-border) !important;
+  color: var(--tech-white) !important;
+  font-size: 0.8rem !important;
+  border-radius: 0 !important;
+}
+
+.tech-search-input::placeholder {
+  color: var(--tech-gray);
+  opacity: 0.6;
+}
+
+.tech-search-input:focus {
+  border-color: var(--tech-white) !important;
+  box-shadow: none !important;
+}
+
+/* Cyber Sharp Buttons */
+.btn-tech-outline {
+  border: 1px solid var(--tech-white);
+  color: var(--tech-white);
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 0;
+  transform: skewX(-8deg);
+  transition: all 0.2s ease;
+}
+
+.btn-tech-outline:hover {
+  background: var(--tech-white);
+  color: var(--tech-bg);
+}
+
+.btn-tech-solid {
+  background: var(--tech-white);
+  color: var(--tech-bg);
+  border: 1px solid var(--tech-white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 0;
+  transform: skewX(-8deg);
+  transition: all 0.2s ease;
+}
+
+.btn-tech-solid:hover {
+  background: #d4d4d4;
+  color: var(--tech-bg);
+}
+
+/* Tech Dropdown Styling */
+.tech-dropdown-menu {
+  background-color: var(--tech-card);
+  border: 1px solid var(--tech-border);
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.tech-dropdown-item {
+  color: var(--tech-gray);
+  font-size: 0.8rem;
+  padding: 10px 20px;
+}
+
+.tech-dropdown-item:hover {
+  background-color: var(--tech-dim);
+  color: var(--tech-white);
+}
+
+/* Sub-text technical lines */
+.tech-accent-line {
+  height: 2px;
+  background: linear-gradient(90deg, #ffffff 0%, #121316 100%);
+  width: 100%;
+}
